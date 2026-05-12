@@ -89,7 +89,7 @@ export const Contact = () => {
                   className={`w-full px-4 py-3 border ${errors.message ? 'border-red-500' : 'border-border'} rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors resize-none`}
                   placeholder="Tell us about your project..."
                 />
-                {errors.message && <p className="mt-2 text-xs text-red-500">{errors.message}</p>}
+                {errors.message && <p className="mt-2 text-xs text-red-500">{errors.message.message}</p>}
               </div>
               <button
                 type="submit"
