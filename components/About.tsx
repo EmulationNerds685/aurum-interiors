@@ -12,7 +12,7 @@ const stats = [
 
 export const About = () => {
   return (
-    <section id="about" className="py-20 md:py-28 bg-secondary/30">
+    <section id="about" className="py-20 md:py-28 bg-secondary/30 overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Image Side */}

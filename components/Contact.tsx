@@ -35,7 +35,7 @@ export const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 md:py-28">
+    <section id="contact" className="py-20 md:py-28 overflow-hidden">
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

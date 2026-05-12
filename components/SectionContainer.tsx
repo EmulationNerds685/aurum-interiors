@@ -16,7 +16,7 @@ export const SectionContainer = ({
   animate = true,
 }: SectionContainerProps) => {
   return (
-    <section id={id} className={`py-20 md:py-28 ${className}`}>
+    <section id={id} className={`py-20 md:py-28 overflow-hidden ${className}`}>
       <div className="container mx-auto px-6">
         {animate ? (
           <motion.div
