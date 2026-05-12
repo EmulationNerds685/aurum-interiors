@@ -1,26 +1,98 @@
+/* app/globals.css - Tailwind CSS v4 Compatible */
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* Define your custom theme variables */
+@theme {
+  /* Colors - Tailwind v4 requires --color-* prefix for color utilities */
+  --color-background: hsl(0 0% 100%);
+  --color-foreground: hsl(20 14% 4%);
+  --color-card: hsl(0 0% 100%);
+  --color-card-foreground: hsl(20 14% 4%);
+  --color-popover: hsl(0 0% 100%);
+  --color-popover-foreground: hsl(20 14% 4%);
+  --color-primary: hsl(30 20% 45%);
+  --color-primary-foreground: hsl(0 0% 100%);
+  --color-secondary: hsl(60 5% 96%);
+  --color-secondary-foreground: hsl(20 14% 4%);
+  --color-muted: hsl(60 5% 96%);
+  --color-muted-foreground: hsl(25 5% 45%);
+  --color-accent: hsl(30 20% 95%);
+  --color-accent-foreground: hsl(20 14% 4%);
+  --color-destructive: hsl(0 84% 60%);
+  --color-destructive-foreground: hsl(0 0% 100%);
+  --color-border: hsl(20 5% 90%);
+  --color-input: hsl(20 5% 90%);
+  --color-ring: hsl(30 20% 45%);
+  --radius: 0.5rem;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  /* Fonts */
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-playfair);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  /* Keyframes */
+  --animate-fade-up: fade-up 0.6s ease-out;
+  --animate-fade-in: fade-in 0.4s ease-out;
+  --animate-scale-up: scale-up 0.4s ease-out;
+
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes scale-up {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Base layer utilities */
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+  html {
+    overflow-x: hidden;
+  }
+  body {
+    overflow-x: hidden;
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Custom utilities */
+@utility text-balance {
+  text-wrap: balance;
+}
+
+@utility animation-delay-200 {
+  animation-delay: 200ms;
+}
+
+@utility animation-delay-400 {
+  animation-delay: 400ms;
 }

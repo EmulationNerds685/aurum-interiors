@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Aurum Interiors
 
-## Getting Started
+[![Netlify Status](https://api.netlify.com/api/v1/badges/your-repo-id/deploy-status)](https://app.netlify.com/sites/aurum-interiors/deploys)
 
-First, run the development server:
+> **Where Vision Meets Execution.**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Aurum Interiors is a premium, high-end portfolio website designed for an interior design and execution firm. It showcases a decade of expertise in transforming residential and commercial spaces into luxurious realities.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ Key Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+-   **Luxury Aesthetics**: A curated dark-mode interface with elegant typography (Outfit/Serif).
+-   **Dynamic Parallax**: High-end parallax scrolling effects for immersive project storytelling.
+-   **Framer Motion Animations**: Smooth micro-interactions and entrance animations.
+-   **Portfolio Gallery**: Showcase of premium projects like Minimalist Luxury Villas and Modern Office Suites.
+-   **Lead Generation**: Integrated consultation booking and contact forms with robust validation.
+-   **Performance Optimized**: Built on Next.js 16 for lightning-fast loading and SEO.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Tech Stack
 
-## Learn More
+-   **Framework**: [Next.js](https://nextjs.org/) (App Router)
+-   **Styling**: [Tailwind CSS 4](https://tailwindcss.com/)
+-   **Animations**: [Framer Motion](https://www.framer.com/motion/)
+-   **Icons**: [Lucide React](https://lucide.dev/)
+-   **Form Handling**: [React Hook Form](https://react-hook-form.com/) & [Zod](https://zod.dev/)
+-   **Typography**: Google Fonts (Geist, Outfit)
 
-To learn more about Next.js, take a look at the following resources:
+## 🚀 Getting Started
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Prerequisites
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+-   Node.js 22+
+-   npm / pnpm / yarn
 
-## Deploy on Vercel
+### Installation
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1.  Clone the repository:
+    ```bash
+    git clone https://github.com/your-username/aurum-interiors.git
+    ```
+2.  Navigate to the directory:
+    ```bash
+    cd aurum-interiors
+    ```
+3.  Install dependencies:
+    ```bash
+    npm install
+    ```
+4.  Run the development server:
+    ```bash
+    npm run dev
+    ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Open [http://localhost:3000](http://localhost:3000) to view the project in your browser.
+
+## 🌐 Deployment
+
+This project is configured for seamless deployment on **Netlify**.
+
+1.  Connect your GitHub repository to Netlify.
+2.  Set the build command to `npm run build`.
+3.  Set the publish directory to `.next`.
+4.  Add any necessary environment variables in the Netlify UI.
+
+## 📞 Contact & Consultation
+
+For inquiries or professional consultations:
+-   **Phone**: +91 95404 05404
+-   **Website**: [auruminteriors.com](https://auruminteriors.com)
+
+---
+
+*Designing Spaces Since 2012.*
